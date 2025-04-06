@@ -13,11 +13,11 @@ const Navbar = () => {
                 </div>
 
                 {/* MOBILE HAMBURGER */}
-                <div className='lg:hidden cursor-pointer'>
+                {/* <div className='lg:hidden cursor-pointer'>
                     <button>
                         <MenuRoundedIcon fontSize='large' />
                     </button>
-                </div>
+                </div> */}
 
                 <div className='hidden lg:block'>
                     <ul className='flex items-center gap-6'>
