@@ -1,14 +1,22 @@
 import React from 'react'
 import GridViewRoundedIcon from '@mui/icons-material/GridViewRounded';
 import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
+import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 
 const Navbar = () => {
     return (
         <nav className='bg-[#3FC602] text-white shadow-xl shadow-gray-300'>
             <div className='container flex items-center justify-between'>
-                <div className='flex items-center gap-2 py-2 px-3 hover:bg-red-600 rounded-lg'>
+                <div className='hidden md:flex items-center gap-2 py-2 px-3 hover:bg-red-600 rounded-lg'>
                     <GridViewRoundedIcon />
                     <p>Category</p>
+                </div>
+
+                {/* MOBILE HAMBURGER */}
+                <div>
+                    <button>
+                        <MenuRoundedIcon />
+                    </button>
                 </div>
 
                 <div className='hidden lg:block'>
@@ -35,11 +43,6 @@ const Navbar = () => {
                         <MagnifyingGlassIcon strokeWidth={2} className='bg-red-600 p-1.5 rounded-full absolute  size-9 right-5 md:right-9 lg:right-9.5 cursor-pointer' />
                     </div> */}
                 </div>
-
-                {/* HAMBURGER */}
-                {/* <div>
-
-                </div> */}
             </div>
         </nav>
     )
