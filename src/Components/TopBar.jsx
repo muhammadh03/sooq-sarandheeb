@@ -33,9 +33,9 @@ const TopBar = () => {
     <div className='pr-8 pl-8 flex items-center justify-between'>
       <div className='flex items-center'>
         <img src={logo} alt="Logo" className='w-36 md:w-36' />
-        <MapPinIcon strokeWidth={2} className='text-black size-6 ml-14 cursor-pointer' />
+        <MapPinIcon strokeWidth={2} className='hidden md:block text-black size-6 ml-14 cursor-pointer' />
         <p>
-          <span className='text-black font-semibold ml-2'>Rustaq</span>
+          <span className='hidden md:block text-black font-semibold ml-2'>Rustaq</span>
         </p>
       </div>
       <div className='flex items-center'>
