@@ -44,7 +44,7 @@
 
 @layer utilities {
     .container {
-        @apply  max-w-screen py-6 px-4 sm:px-6 md:px-8;
+        @apply  max-w-screen py-2 md:py-4 px-4 sm:px-6 md:px-8;
     }
 }
 
