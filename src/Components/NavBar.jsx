@@ -13,7 +13,7 @@ const Navbar = () => {
                 </div>
 
                 {/* MOBILE HAMBURGER */}
-                <div>
+                <div className='lg:hidden cursor-pointer'>
                     <button>
                         <MenuRoundedIcon fontSize='large' />
                     </button>
