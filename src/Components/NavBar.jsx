@@ -15,7 +15,7 @@ const Navbar = () => {
                 {/* MOBILE HAMBURGER */}
                 <div>
                     <button>
-                        <MenuRoundedIcon />
+                        <MenuRoundedIcon fontSize='large' />
                     </button>
                 </div>
 
