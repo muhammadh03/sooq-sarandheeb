@@ -13,9 +13,9 @@ const Navbar = () => {
                 </div>
 
                 {/* MOBILE HAMBURGER */}
-                <div className='lg:hidden cursor-pointer'>
+                <div className='lg:hidden'>
                     <button>
-                        <MenuRoundedIcon fontSize='large' />
+                        <MenuRoundedIcon fontSize='large' className='cursor-pointer' />
                     </button>
                 </div>
 
