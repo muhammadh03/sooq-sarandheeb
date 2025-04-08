@@ -6,7 +6,7 @@ const HomeContent = () => {
   return (
     <div>
       <Banner />
-      <div className='container mt-4 grid grid-cols-4 md:grid-cols-5 gap-4 md:gap-6 lg:gap-12'>
+      <div className='container mt-4 grid grid-cols-3 md:grid-cols-5 gap-4 md:gap-6 lg:gap-12'>
       <Card />
       <Card />
       <Card />
