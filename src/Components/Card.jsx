@@ -27,7 +27,7 @@ const Card = ({title, itemImage, offerImage}) => {
             <img src={itemImage} alt={title} className="w-full h-full object-cover" />
           )}
         </div>
-        <div className='text-center h-18 lg:h-14 p-2 rounded-b-xl'>
+        <div className='text-center h-18 lg:h-14 p-2 rounded-b-xl '>
             <p>
                 {title}
             </p>

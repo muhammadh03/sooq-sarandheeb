@@ -7,7 +7,11 @@ import CardTwo from '../assets/cardTwo.jpg';
 import CardThree from '../assets/cardThree.jpg';
 import CardFour from '../assets/cardFour.jpg';
 import CardFive from '../assets/cardFive.jpg';
+import CardSix from '../assets/cardSix.jpg';
 import CardSeven from '../assets/cardSeven.jpg';
+import CardEight from '../assets/cardEight.jpg';
+import CardNine from '../assets/cardNine.jpg';
+import CardTen from '../assets/cardTen.jpg';
 
 import OfferImage from '../assets/offerImage.jpg';
 
@@ -33,24 +37,24 @@ const CardDetails = [
       itemImage: CardFive,
     },
     {
-        title: 'Premium Perfumes',
-        itemImage: CardOne,
+        title: 'Eid Special Sweets',
+        itemImage: CardSix,
       },
       {
         title: 'Home Furniture',
         itemImage: CardSeven,
       },
       {
-        title: 'Chilled Products',
-        itemImage: CardThree,
+        title: 'Premium Olive Oil',
+        itemImage: CardEight,
       },
       {
-        title: 'Fresh Sea Food',
-        itemImage: CardFour,
+        title: 'Bakery Items',
+        itemImage: CardNine,
       },
       {
-        title: 'Beverages',
-        itemImage: CardFive,
+        title: 'Genuine Handmade Sandals',
+        itemImage: CardTen,
       },
   ];
 
@@ -59,7 +63,7 @@ const HomeContent = () => {
     const offerMapping = {
         'Premium Perfumes': OfferImage,
         'Home Furniture': OfferImage,
-        'Beverages': OfferImage,
+        'Genuine Handmade Sandals': OfferImage,
     };
       
     return (
