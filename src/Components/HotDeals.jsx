@@ -113,19 +113,19 @@ const HotDeals = () => {
 
                 {/* Mobile Menu */}
                 {isOpen && (
-                    <div className='block md:hidden w-full border-4 border-[#3FC602] bg-black opacity-80  absolute top-10 z-50 py-6 px-4 rounded-2xl text-gray-300'>
-                    <ul className='flex-col items-center'>
+                    <div className='block md:hidden w-full h-48 border-4 border-[#3FC602] bg-black opacity-80  absolute top-10 z-50 py-6 px-4 rounded-2xl text-gray-300'>
+                    <ul className='flex flex-col  justify-evenly gap-4'>
                         <li>
-                            <a href="" className='nav-link'>All</a>
+                            <a href="" className='mobile-nav-link'>All</a>
                         </li>
                         <li>
-                            <a href="" className='nav-link'>Nuts & Seeds</a>
+                            <a href="" className='mobile-nav-link'>Nuts & Seeds</a>
                         </li>
                         <li>
-                            <a href="" className='nav-link'>Groceries</a>
+                            <a href="" className='mobile-nav-link'>Groceries</a>
                         </li>
                         <li>
-                            <a href="" className='nav-link'>Health & Beauty</a>
+                            <a href="" className='mobile-nav-link'>Health & Beauty</a>
                         </li>
                     </ul>
                 </div>
