@@ -19,7 +19,7 @@ import ArrowCircleRightOutlinedIcon from '@mui/icons-material/ArrowCircleRightOu
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 
-import NutsItemCard from './Cards/NutsItemCard';
+import GroceryAndFreshCard from './Cards/GroceryAndFreshCard';
 
 import WallNut from '../assets/wallnut.png';
 import Hazelnut from '../assets/hazelnut.png';
@@ -92,7 +92,7 @@ const CardDetails = [
     },
 ];
 
-const HotDeals = () => {
+const TopDeals = () => {
 
     const [isOpen, setIsOpen] = useState(false);
 
@@ -116,33 +116,33 @@ const HotDeals = () => {
                     <div className='block md:hidden w-full h-48 border-4 border-[#3FC602] bg-black opacity-80  absolute top-10 z-50 py-6 px-4 rounded-2xl text-gray-300'>
                     <ul className='flex flex-col  justify-evenly gap-4'>
                         <li>
-                            <a href="" className='mobile-nav-link'>All</a>
+                            <a href="" className='topdeal-nav-link'>All</a>
                         </li>
                         <li>
-                            <a href="" className='mobile-nav-link'>Nuts & Seeds</a>
+                            <a href="" className='topdeal-nav-link'>Nuts & Seeds</a>
                         </li>
                         <li>
-                            <a href="" className='mobile-nav-link'>Groceries</a>
+                            <a href="" className='topdeal-nav-link'>Groceries</a>
                         </li>
                         <li>
-                            <a href="" className='mobile-nav-link'>Health & Beauty</a>
+                            <a href="" className='topdeal-nav-link'>Health & Beauty</a>
                         </li>
                     </ul>
                 </div>
                 )}
                 <div className='hidden md:block lg:block'>
-                    <ul className='flex items-center gap-4'>
+                    <ul className='flex items-center gap-4 text-gray-700'>
                         <li>
-                            <a href="" className='nav-link'>All</a>
+                            <a href="" className='topdeal-nav-link'>All</a>
                         </li>
                         <li>
-                            <a href="" className='nav-link'>Nuts & Seeds</a>
+                            <a href="" className='topdeal-nav-link'>Nuts & Seeds</a>
                         </li>
                         <li>
-                            <a href="" className='nav-link'>Groceries</a>
+                            <a href="" className='topdeal-nav-link'>Groceries</a>
                         </li>
                         <li>
-                            <a href="" className='nav-link'>Health & Beauty</a>
+                            <a href="" className='topdeal-nav-link'>Health & Beauty</a>
                         </li>
                     </ul>
                 </div>
@@ -152,8 +152,8 @@ const HotDeals = () => {
                         view all
                     </p>
                     <div className='flex items-center gap-3'>
-                        <ArrowCircleLeftOutlinedIcon className='custom-prev-btn hover:text-red-600 cursor-pointer' />
-                        <ArrowCircleRightOutlinedIcon className='custom-next-btn hover:text-red-600 cursor-pointer' />
+                        <ArrowCircleLeftOutlinedIcon className='custom-prev-btn text-gray-700 hover:text-[#3FC602] cursor-pointer' />
+                        <ArrowCircleRightOutlinedIcon className='custom-next-btn text-gray-700 hover:text-[#3FC602] cursor-pointer' />
                     </div>
                 </div>
             </div>
@@ -191,7 +191,7 @@ const HotDeals = () => {
                 >
                     {CardDetails.map(({ title, itemImage, price }) => (
                         <SwiperSlide>
-                            <NutsItemCard
+                            <GroceryAndFreshCard
                                 key={title}
                                 title={title}
                                 itemImage={itemImage}
@@ -206,4 +206,4 @@ const HotDeals = () => {
     )
 }
 
-export default HotDeals;
+export default TopDeals;

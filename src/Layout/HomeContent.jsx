@@ -14,8 +14,9 @@ import CardNine from '../assets/cardNine.jpg';
 import CardTen from '../assets/cardTen.jpg';
 
 import OfferImage from '../assets/offerImage.jpg';
-import HotDeals from '../Components/HotDeals';
-import NutsItemCard from '../Components/Cards/NutsItemCard';
+import TopDeals from '../Components/TopDeals';
+import MegaDeals from '../Components/MegaDeals';
+import KillerDeals from '../Components/KillerDeals';
 
 const CardDetails = [
     {
@@ -85,14 +86,36 @@ const HomeContent = () => {
                 })}
             </div>
 
-            {/* HOTTEST DEALS COMPONENT */}
-            <div className='mt-6'>
-              <div className='text-center my-2'>
-                  <h1 className='text-3xl font-semibold'>Hottest Deals</h1>
+            {/* TOP DEALS COMPONENT */}
+            <div className='my-16'>
+              <div className='px-11 my-2'>
+                  <h1 className='text-3xl font-semibold'>Top Deals</h1>
               </div>
               
               <div className='px-8'>
-                  <HotDeals />
+                  <TopDeals />
+              </div>
+            </div>
+
+            {/* MEGA DEALS COMPONENT */}
+            <div className='my-16'>
+              <div className='px-11 my-2'>
+                  <h1 className='text-3xl font-semibold'>Mega Deals</h1>
+              </div>
+              
+              <div className='px-8'>
+                  <MegaDeals />
+              </div>
+            </div>
+
+            {/* KILLER DEALS COMPONENT */}
+            <div className='my-16'>
+              <div className='px-11 my-2'>
+                  <h1 className='text-3xl font-semibold'>Killer Deals</h1>
+              </div>
+              
+              <div className='px-8'>
+                  <KillerDeals />
               </div>
             </div>
         </div>

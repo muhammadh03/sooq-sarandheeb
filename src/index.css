@@ -33,18 +33,23 @@
     body {
         font-family: var(--font-primary);
         background-color: var(--color-neutral-100);
+        color: var(--color-gray-700);
     }
 
     /*... */
 }
 
 @layer components {
-    .nav-link {
+    .topdeal-nav-link {
+        @apply py-2 px-3 rounded-lg hover:bg-[#3FC602] hover:text-white duration-300;
+    }
+
+    .megadeal-nav-link {
         @apply py-2 px-3 rounded-lg hover:bg-red-600 hover:text-white duration-300;
     }
 
-    .mobile-nav-link {
-        @apply py-2 px-3 rounded-lg hover:bg-red-600 hover:text-white duration-300;
+    .killerdeal-nav-link {
+        @apply py-2 px-3 rounded-lg hover:bg-indigo-700 hover:text-white duration-300;
     }
 }
 

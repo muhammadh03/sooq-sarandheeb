@@ -33,13 +33,13 @@ const TopBar = () => {
     <div className='px-4 sm:px-6 md:px-8 flex items-center justify-between'>
       <div className='flex items-center'>
         <img src={logo} alt="Logo" className='w-28 md:w-36' />
-        <MapPinIcon strokeWidth={2} className=' text-black size-6 ml-6 md:ml-14 cursor-pointer' />
+        <MapPinIcon strokeWidth={2} className=' size-6 ml-6 md:ml-14 cursor-pointer' />
         <p>
-          <span className=' text-black font-semibold ml-2'>Rustaq</span>
+          <span className='font-semibold ml-2'>Rustaq</span>
         </p>
       </div>
       <div className='flex items-center'>
-        <UserIcon strokeWidth={2} className='text-black size-6 mr-5 md:mr-10 cursor-pointer' />
+        <UserIcon strokeWidth={2} className='size-6 mr-5 md:mr-10 cursor-pointer' />
         <StyledIconButton aria-label="cart">
           <StyledBadge badgeContent={4} color="success" className='text-gray-700 '>
             <ShoppingCartOutlinedIcon />

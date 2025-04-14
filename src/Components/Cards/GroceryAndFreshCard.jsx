@@ -2,10 +2,10 @@ import React from 'react';
 
 
 
-const NutsItemCard = ({title, itemImage, price}) => {
+const GroceryAndFreshCard = ({title, itemImage, price}) => {
     return (
-        <div className='sm:w-28 md:w-[9.5rem] lg:w-[13.5rem] pb-4 border-2 border-gray-300 p-2 hover:border-[#3FC602] rounded-2xl shadow-xl cursor-pointer'>
-            <div className='flex items-center justify-center'>
+        <div className='sm:w-28 md:w-[9.5rem] lg:w-[13.5rem] pb-4 bg-white border-2 border-gray-300 p-2 hover:border-[#3FC602] rounded-2xl shadow-xl cursor-pointer'>
+            <div className='flex items-center justify-center h-52'>
                 <img src={itemImage} alt="" className='md:w-24 w-32 h-44' />
             </div>
 
@@ -20,7 +20,11 @@ const NutsItemCard = ({title, itemImage, price}) => {
             </div>
 
             <div className='mb-4 relative'>
-                <select name="gram" id="gram" className='border-1 border-gray-300 w-full rounded-sm text-gray-500 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-[#3FC602] cursor-pointer'>
+                <select 
+                name="gram" 
+                id="gram" 
+                className='border-1 border-gray-300 w-full rounded-sm text-gray-500 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-[#3FC602] cursor-pointer'
+                >
                     <option value="gram">250g</option>
                     <option value="kg">500g</option>
                     <option value="kg">1kg</option>
@@ -38,4 +42,4 @@ const NutsItemCard = ({title, itemImage, price}) => {
     )
 }
 
-export default NutsItemCard;
+export default GroceryAndFreshCard;
