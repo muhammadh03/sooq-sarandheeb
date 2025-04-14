@@ -1,6 +1,6 @@
 import React from 'react'
 import Banner from '../Components/Banner';
-import Card from '../Components/Card';
+import Card from '../Components/Cards/Card';
 
 import CardOne from '../assets/cardOne.jpg';
 import CardTwo from '../assets/cardTwo.jpg';
@@ -14,6 +14,8 @@ import CardNine from '../assets/cardNine.jpg';
 import CardTen from '../assets/cardTen.jpg';
 
 import OfferImage from '../assets/offerImage.jpg';
+import HotDeals from '../Components/HotDeals';
+import NutsItemCard from '../Components/Cards/NutsItemCard';
 
 const CardDetails = [
     {
@@ -53,7 +55,7 @@ const CardDetails = [
         itemImage: CardNine,
       },
       {
-        title: 'Genuine Handmade Sandals',
+        title: 'Handmade Sandals',
         itemImage: CardTen,
       },
   ];
@@ -63,7 +65,7 @@ const HomeContent = () => {
     const offerMapping = {
         'Premium Perfumes': OfferImage,
         'Home Furniture': OfferImage,
-        'Genuine Handmade Sandals': OfferImage,
+        'Handmade Sandals': OfferImage,
     };
       
     return (
@@ -81,6 +83,17 @@ const HomeContent = () => {
                     />
                     )
                 })}
+            </div>
+
+            {/* HOTTEST DEALS COMPONENT */}
+            <div className='mt-6'>
+              <div className='text-center my-2'>
+                  <h1 className='text-3xl font-semibold'>Hottest Deals</h1>
+              </div>
+              
+              <div className='px-8'>
+                  <HotDeals />
+              </div>
             </div>
         </div>
     )
