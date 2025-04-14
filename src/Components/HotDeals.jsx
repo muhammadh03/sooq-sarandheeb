@@ -15,6 +15,10 @@ import 'swiper/css/autoplay';
 import ArrowCircleLeftOutlinedIcon from '@mui/icons-material/ArrowCircleLeftOutlined';
 import ArrowCircleRightOutlinedIcon from '@mui/icons-material/ArrowCircleRightOutlined';
 
+// Mobile Hamburger
+import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
+import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
+
 import NutsItemCard from './Cards/NutsItemCard';
 
 import WallNut from '../assets/wallnut.png';
@@ -90,10 +94,43 @@ const CardDetails = [
 
 const HotDeals = () => {
 
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    }
+
     return (
         <div>
-            <div className='flex items-center justify-between'>
-                <div>
+
+            <div className='flex items-center justify-between relative'>
+                {/* MOBILE HAMBURGER */}
+                <div className='md:hidden'>
+                    <button onClick={toggleMenu} className='cursor-pointer'>
+                    {isOpen ? <CloseRoundedIcon /> : <MenuRoundedIcon />}
+                    </button>
+                </div>
+
+                {/* Mobile Menu */}
+                {isOpen && (
+                    <div className='block md:hidden w-full border-4 border-[#3FC602] bg-black opacity-80  absolute top-10 z-50 py-6 px-4 rounded-2xl text-gray-300'>
+                    <ul className='flex-col items-center'>
+                        <li>
+                            <a href="" className='nav-link'>All</a>
+                        </li>
+                        <li>
+                            <a href="" className='nav-link'>Nuts & Seeds</a>
+                        </li>
+                        <li>
+                            <a href="" className='nav-link'>Groceries</a>
+                        </li>
+                        <li>
+                            <a href="" className='nav-link'>Health & Beauty</a>
+                        </li>
+                    </ul>
+                </div>
+                )}
+                <div className='hidden md:block lg:block'>
                     <ul className='flex items-center gap-4'>
                         <li>
                             <a href="" className='nav-link'>All</a>
@@ -115,8 +152,8 @@ const HotDeals = () => {
                         view all
                     </p>
                     <div className='flex items-center gap-3'>
-                        <ArrowCircleLeftOutlinedIcon  className='custom-prev-btn hover:text-red-600 cursor-pointer' />
-                        <ArrowCircleRightOutlinedIcon  className='custom-next-btn hover:text-red-600 cursor-pointer' />
+                        <ArrowCircleLeftOutlinedIcon className='custom-prev-btn hover:text-red-600 cursor-pointer' />
+                        <ArrowCircleRightOutlinedIcon className='custom-next-btn hover:text-red-600 cursor-pointer' />
                     </div>
                 </div>
             </div>
@@ -136,6 +173,20 @@ const HotDeals = () => {
                         prevEl: ".custom-prev-btn",
                         nextEl: ".custom-next-btn",
                     }}
+                    breakpoints={{
+                        // When the screen width is >= 640px (small screens)
+                        375: {
+                            slidesPerView: 2, // Show 2 cards
+                        },
+                        // When the screen width is >= 768px (medium screens)
+                        768: {
+                            slidesPerView: 4, // Show 4 cards
+                        },
+                        // When the screen width is >= 1024px (large screens)
+                        1024: {
+                            slidesPerView: 5, // Show 5 cards
+                        },
+                    }}
                     className="mySwiper"
                 >
                     {CardDetails.map(({ title, itemImage, price }) => (
@@ -151,7 +202,6 @@ const HotDeals = () => {
                     ))}
                 </Swiper>
             </div>
-
         </div>
     )
 }

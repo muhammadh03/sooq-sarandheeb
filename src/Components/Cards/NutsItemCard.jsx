@@ -1,14 +1,12 @@
 import React from 'react';
 
-// import WallNut from '../../assets/wallnut.png';
-
 
 
 const NutsItemCard = ({title, itemImage, price}) => {
     return (
-        <div className='w-[13.5rem] pb-4 border-2 border-gray-300 p-2 hover:border-[#3FC602] rounded-2xl shadow-xl cursor-pointer'>
+        <div className='sm:w-28 md:w-[9.5rem] lg:w-[13.5rem] pb-4 border-2 border-gray-300 p-2 hover:border-[#3FC602] rounded-2xl shadow-xl cursor-pointer'>
             <div className='flex items-center justify-center'>
-                <img src={itemImage} alt="" className='w-32 h-44' />
+                <img src={itemImage} alt="" className='md:w-24 w-32 h-44' />
             </div>
 
             <div>
