@@ -51,16 +51,16 @@ const Navbar = () => {
 
                 {/* MOBILE MENU */}
                 {isCategoryOpen && (
-                    <div className='bg-white text-gray-700 absolute top-20 z-50 p-2 md:p-2 rounded-lg w-36 md:w-52'>
+                    <div className='block lg:hidden bg-white text-gray-700 absolute top-20.5 z-50 p-2 md:p-2 rounded-lg w-36 md:w-52'>
                         <div className='flex flex-col gap-4 relative'>
-                            <div className='group'>
+                            <div className='group rounded-lg'>
                                 <div className='hover:bg-[#3FC602] hover:text-white p-2 rounded-lg'>
                                     <div className='text-xs md:text-base flex items-center justify-between'>
                                         <span>Grocery & Fresh</span>
                                         <KeyboardArrowRightRoundedIcon />
                                     </div>
                                 </div>
-                                <div className='hidden group-hover:block absolute left-48 -top-2 h-72 rounded-lg overflow-y-scroll'>
+                                <div className='hidden group-hover:block absolute left-32 -top-2 z-50 h-72 rounded-lg overflow-y-scroll'>
                                     <GroceryAndFreshSmallNav />
                                 </div>
                             </div>
