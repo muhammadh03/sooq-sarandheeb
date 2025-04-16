@@ -131,7 +131,7 @@ const MegaDeals = () => {
   
                   {/* Mobile Menu */}
                   {isOpen && (
-                      <div className='block md:hidden w-full h-48 border-4 border-[#3FC602] bg-black opacity-80  absolute top-10 z-50 py-6 px-4 rounded-2xl text-gray-300'>
+                      <div className='block md:hidden w-full h-48 border-4 border-indigo-700 bg-black opacity-80  absolute top-10 z-50 py-6 px-4 rounded-2xl text-gray-300'>
                       <ul className='flex flex-col  justify-evenly gap-4'>
                           <li>
                               <a href="" className='mobile-nav-link'>All</a>
