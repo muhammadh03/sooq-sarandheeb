@@ -51,7 +51,7 @@ const Navbar = () => {
 
                 {/* MOBILE MENU */}
                 {isCategoryOpen && (
-                    <div className='block lg:hidden bg-white text-gray-700 absolute top-20.5 z-50 p-2 md:p-2 rounded-lg w-36 md:w-52'>
+                    <div className='block lg:hidden bg-white text-gray-700 absolute top-14.5 z-50 p-2 md:p-2 rounded-lg w-36 md:w-52'>
                         <div className='flex flex-col gap-4 relative'>
                             <div className='group rounded-lg'>
                                 <div className='hover:bg-[#3FC602] hover:text-white p-2 rounded-lg'>
