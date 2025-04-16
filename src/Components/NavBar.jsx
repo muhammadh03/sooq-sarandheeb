@@ -7,7 +7,7 @@ import ExpandLessRoundedIcon from '@mui/icons-material/ExpandLessRounded';
 import KeyboardArrowRightRoundedIcon from '@mui/icons-material/KeyboardArrowRightRounded';
 import ZoomOutMapRoundedIcon from '@mui/icons-material/ZoomOutMapRounded';
 
-import GroceryAndFreshNav from './NavCards/GroceryAndFreshNav';
+import GroceryAndFreshNav, { GroceryAndFreshSmallNav } from './NavCards/GroceryAndFreshNav';
 import ElectronicsAndAppliancesNav from './NavCards/ElectronicsAndAppliancesNav';
 import HomeAndLifestyleNav from './NavCards/HomeAndLifestyleNav';
 
@@ -15,8 +15,7 @@ const Navbar = () => {
 
     const [isCategoryOpen, setIsCategoryOpen] = useState(false);
 
-    const handleCategoryClick = (event) => {
-        event.stopPropagation();
+    const handleCategoryClick = () => {
         setIsCategoryOpen(!isCategoryOpen);
     }
 
@@ -52,27 +51,35 @@ const Navbar = () => {
 
                 {/* MOBILE MENU */}
                 {isCategoryOpen && (
-                    <div className='bg-white text-gray-700 absolute top-19 z-50 p-2 md:p-4 rounded-lg w-36 md:w-44'>
+                    <div className='bg-white text-gray-700 absolute top-20 z-50 p-2 md:p-2 rounded-lg w-36 md:w-52'>
                         <div className='flex flex-col gap-4 relative'>
-                            <div className='flex items-center justify-between hover:bg-[#3FC602] hover:text-white p-2 rounded-lg'>
-                                <p className='text-xs md:text-base'>Grocery & Fresh</p>
-                                <button>
-                                    <KeyboardArrowRightRoundedIcon />
-                                </button>
+                            <div className='group'>
+                                <div className='hover:bg-[#3FC602] hover:text-white p-2 rounded-lg'>
+                                    <div className='text-xs md:text-base flex items-center justify-between'>
+                                        <span>Grocery & Fresh</span>
+                                        <KeyboardArrowRightRoundedIcon />
+                                    </div>
+                                </div>
+                                <div className='hidden group-hover:block absolute left-48 -top-2 h-72 rounded-lg overflow-y-scroll'>
+                                    <GroceryAndFreshSmallNav />
+                                </div>
                             </div>
-                            <div className='flex items-center justify-between hover:bg-red-600 hover:text-white p-2 rounded-lg'>
-                                <p className='text-xs md:text-base'>Electronics & Appliances</p>
-                                <button>
-                                    <KeyboardArrowRightRoundedIcon />
-                                </button>
+                            <div>
+                                <div className='hover:bg-red-600 hover:text-white p-2 rounded-lg'>
+                                    <div className='text-xs md:text-base flex items-center justify-between'>
+                                        <span>Elec & Appliances</span>
+                                        <KeyboardArrowRightRoundedIcon />
+                                    </div>
+                                </div>
                             </div>
-                            <div className='flex items-center justify-between hover:bg-indigo-700 hover:text-white p-2 rounded-lg'>
-                                <p className='text-xs md:text-base'>Home & Lifestyle</p>
-                                <button>
-                                    <KeyboardArrowRightRoundedIcon />
-                                </button>
+                            <div>
+                                <div className='hover:bg-indigo-700 hover:text-white p-2 rounded-lg'>
+                                    <div className='text-xs md:text-base flex items-center justify-between'>
+                                        <span>Home & Lifestyle</span>
+                                        <KeyboardArrowRightRoundedIcon />
+                                    </div>
+                                </div>
                             </div>
-
                         </div>
                         {/* <div className='absolute -top-4 left-[16rem]'>
                             <GroceryAndFreshNav />
