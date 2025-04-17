@@ -93,7 +93,7 @@ const HomeContent = () => {
                   <h1 className='text-3xl font-semibold'>Top Deals</h1>
               </div>
               
-              <div className='px-8'>
+              <div className='px-4'>
                   <TopDeals />
               </div>
             </div>
@@ -104,7 +104,7 @@ const HomeContent = () => {
                   <h1 className='text-3xl font-semibold'>Mega Deals</h1>
               </div>
               
-              <div className='px-8'>
+              <div className='px-4'>
                   <MegaDeals />
               </div>
             </div>
@@ -115,7 +115,7 @@ const HomeContent = () => {
                   <h1 className='text-3xl font-semibold'>Killer Deals</h1>
               </div>
               
-              <div className='px-8'>
+              <div className='px-4'>
                   <KillerDeals />
               </div>
             </div>
@@ -131,7 +131,7 @@ const HomeContent = () => {
                   <h1 className='text-3xl font-semibold'>Killer Deals</h1>
               </div>
               
-              <div className='px-8'>
+              <div className='px-4'>
                   <KillerDeals />
               </div>
             </div>

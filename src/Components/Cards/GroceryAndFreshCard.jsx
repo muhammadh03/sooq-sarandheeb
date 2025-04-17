@@ -9,7 +9,8 @@ const GroceryAndFreshCard = ({title, itemImage, price}) => {
             <FavoriteBorderRoundedIcon />
             
             <div className='flex items-center justify-center h-52'>
-                <img src={itemImage} alt="" className='md:w-24 w-32 h-44' />
+                {/* <img src={itemImage} alt="" className='md:w-24 w-32 h-44' /> */}
+                <img src={itemImage} alt="" className='sm:w-28 md:w-28 lg:w-36 xs:h-16 md:h-40' />
             </div>
 
             <div>

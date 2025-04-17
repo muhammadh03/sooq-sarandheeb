@@ -139,7 +139,7 @@ const CardDetails = [
     },
     {
         brand: 'Prestige',
-        title: 'Prestige Nutri-Mix 2.0 350W Mixer Grinder with 2 Multipurpose Jars',
+        title: 'Prestige Nutri-Mix 2.0 350W Mixer Grinder',
         itemImage: imageNine,
         price: '0.550',
         descriptions: {
@@ -259,7 +259,7 @@ const KillerDeals = () => {
                 <div className='mt-8'>
                     <Swiper
                         slidesPerView={5}
-                        spaceBetween={30}
+                        spaceBetween={10}
                         loop={true}
                         modules={[Navigation, Autoplay]}
                         autoplay={{
@@ -274,14 +274,22 @@ const KillerDeals = () => {
                             // When the screen width is >= 640px (small screens)
                             375: {
                                 slidesPerView: 2, // Show 2 cards
+                                spaceBetween: 10,
                             },
                             // When the screen width is >= 768px (medium screens)
                             768: {
-                                slidesPerView: 4, // Show 4 cards
+                                slidesPerView: 3, // Show 3 cards
+                                spaceBetween: 20,
                             },
                             // When the screen width is >= 1024px (large screens)
                             1024: {
+                                slidesPerView: 4, // Show 4 cards
+                                spaceBetween: 20,
+                            },
+                            // When the screen width is >= 1280px
+                            1280: {
                                 slidesPerView: 5, // Show 5 cards
+                                spaceBetween: 20,
                             },
                         }}
                         className="mySwiper"
@@ -291,12 +299,6 @@ const KillerDeals = () => {
                             title, 
                             itemImage,
                             descriptions,
-                            // descriptionOne, 
-                            // descriptionTwo,
-                            // descriptionThree,
-                            // descriptionFour,
-                            // descriptionFive,
-                            // descriptionSix,
                             price
                         }) => (
                             <SwiperSlide>
@@ -306,12 +308,6 @@ const KillerDeals = () => {
                                     title={title}
                                     itemImage={itemImage}
                                     descriptions={descriptions}
-                                    // descriptionOne={descriptionOne}
-                                    // descriptionTwo={descriptionTwo}
-                                    // descriptionThree={descriptionThree}
-                                    // descriptionFour={descriptionFour}
-                                    // descriptionFive={descriptionFive}
-                                    // descriptionSix={descriptionSix}
                                     price={price}
                                     className='gap-6'
                                 />
