@@ -21,7 +21,7 @@ const ElectronicsAndAppliancesCard = ({
             <FavoriteBorderRoundedIcon />
 
             <div className='flex items-center justify-center h-44'>
-                <img src={itemImage} alt="" className='sm:w-28 md:w-28 lg:w-36 sm:h-16 md:h-40' />
+                <img src={itemImage} alt="" className='sm:w-28 md:w-28 lg:w-36 xs:h-16 md:h-40' />
             </div>
 
             <div>
