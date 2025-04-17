@@ -1,29 +1,57 @@
-import React from 'react'
+import React from 'react';
 
-const ElectronicsAndAppliancesCard = ({title, itemImage, price}) => {
+import FavoriteBorderRoundedIcon from '@mui/icons-material/FavoriteBorderRounded';
+
+
+const ElectronicsAndAppliancesCard = ({
+    brand, 
+    title, 
+    itemImage,
+    descriptions,
+    // descriptionOne,
+    // descriptionTwo,
+    // descriptionThree,
+    // descriptionFour,
+    // descriptionFive,
+    // descriptionSix,
+    price
+}) => {
   return (
     <div className='sm:w-28 md:w-[9.5rem] lg:w-[13.5rem] pb-4 border-2 bg-white border-gray-300 p-2 hover:border-indigo-700 rounded-2xl shadow-xl cursor-pointer'>
-            <div className='flex items-center justify-center h-52'>
-                <img src={itemImage} alt="" className='sm:w-28 md:w-28 lg:w-36 sm:h-28 md:h-40' />
+            <FavoriteBorderRoundedIcon />
+
+            <div className='flex items-center justify-center h-44'>
+                <img src={itemImage} alt="" className='sm:w-28 md:w-28 lg:w-36 sm:h-16 md:h-40' />
             </div>
 
             <div>
                 <hr className='border-1 border-gray-300' />
             </div>
 
-            <div className='my-2 h-12'>
+            <div className='py-1 h-6'>
+                <p className='text-xs'>
+                    {brand}
+                </p>
+            </div>
+
+            <div className='mb-2 h-14'>
                 <p className='font-semibold text-sm'>
                     {title}
                 </p>
             </div>
 
-            <div className='mb-4 relative'>
-                <select name="gram" id="gram" className='border-1 border-gray-300 w-full rounded-sm placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-700 cursor-pointer'>
-                    <option value="gram">250g</option>
-                    <option value="kg">500g</option>
-                    <option value="kg">1kg</option>
-                    <option value="kg">1.5kg</option>
-                </select>
+            <div>
+                {descriptions && (
+                    <ul className='list-disc pl-4 text-[10px] leading-5'>
+                        {Object.values(descriptions).map((desc, index) => (
+                            <li key={index}>
+                                <a href="">
+                                    {desc}
+                                </a>
+                            </li>
+                        ))}
+                    </ul>
+                )}
             </div>
 
             <div className='flex items-center justify-between'>

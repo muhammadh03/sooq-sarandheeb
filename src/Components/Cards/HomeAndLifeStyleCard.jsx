@@ -1,8 +1,12 @@
-import React from 'react'
+import React from 'react';
+
+import FavoriteBorderRoundedIcon from '@mui/icons-material/FavoriteBorderRounded';
 
 const HomeAndLifeStyleCard = ({title, itemImage, price}) => {
   return (
     <div className='sm:w-28 md:w-[9.5rem] lg:w-[13.5rem] pb-4 border-2 bg-white border-gray-300 p-2 hover:border-red-600 rounded-2xl shadow-xl cursor-pointer'>
+            <FavoriteBorderRoundedIcon />
+
             <div className='flex items-center justify-center h-52'>
                 <img src={itemImage} alt="" className='sm:w-28 md:w-36 lg:w-36 sm:h-36 md:h-40' />
             </div>
@@ -17,14 +21,14 @@ const HomeAndLifeStyleCard = ({title, itemImage, price}) => {
                 </p>
             </div>
 
-            <div className='mb-4 relative'>
+            {/* <div className='mb-4 relative'>
                 <select name="gram" id="gram" className='border-1 border-gray-300 w-full rounded-sm placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-red-600 cursor-pointer'>
                     <option value="gram">250g</option>
                     <option value="kg">500g</option>
                     <option value="kg">1kg</option>
                     <option value="kg">1.5kg</option>
                 </select>
-            </div>
+            </div> */}
 
             <div className='flex items-center justify-between'>
                 <p className='font-semibold text-sm'>

@@ -35,13 +35,17 @@ const Navbar = () => {
                 <div>
                     {
                         isCategoryOpen ? (
-                            <button onClick={handleCategoryClick} className='flex items-center gap-2 py-2 px-3 hover:bg-red-600 hover:text-white rounded-lg focus:bg-red-600 focus:text-white'>
+                            <button 
+                            onClick={handleCategoryClick} 
+                            className='flex items-center gap-2 py-2 px-3  rounded-lg focus:bg-red-600 focus:text-white'>
                                 {/* <ExpandMoreRoundedIcon /> */}
                                 <ZoomOutMapRoundedIcon />
                                 <p>Category</p>
                             </button>
                         ) : (
-                            <button onClick={handleCategoryClick} className='flex items-center gap-2 py-2 px-3 hover:bg-red-600 hover:text-white rounded-lg'>
+                            <button 
+                            onClick={handleCategoryClick} 
+                            className='flex items-center gap-2 py-2 px-3 hover:bg-red-600 hover:text-white rounded-lg'>
                                 <GridViewRoundedIcon />
                                 <p>Category</p>
                             </button>
@@ -60,7 +64,7 @@ const Navbar = () => {
                                         <KeyboardArrowRightRoundedIcon />
                                     </div>
                                 </div>
-                                <div className='hidden group-hover:block absolute left-32 -top-2 z-50 h-72 rounded-lg overflow-y-scroll'>
+                                <div className=' group-hover:block absolute left-32 -top-2 z-50 h-72 rounded-lg overflow-y-scroll'>
                                     <GroceryAndFreshSmallNav />
                                 </div>
                             </div>

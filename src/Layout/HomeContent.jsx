@@ -17,6 +17,7 @@ import OfferImage from '../assets/offerImage.jpg';
 import TopDeals from '../Components/TopDeals';
 import MegaDeals from '../Components/MegaDeals';
 import KillerDeals from '../Components/KillerDeals';
+import GridCard from '../Components/Cards/GridCard';
 
 const CardDetails = [
     {
@@ -110,6 +111,22 @@ const HomeContent = () => {
 
             {/* KILLER DEALS COMPONENT */}
             <div className='my-16'>
+              <div className='px-11 my-2'>
+                  <h1 className='text-3xl font-semibold'>Killer Deals</h1>
+              </div>
+              
+              <div className='px-8'>
+                  <KillerDeals />
+              </div>
+            </div>
+
+            {/* 1ST GRID CARD */}
+            <div className='px-8'>
+                <GridCard />
+            </div>
+
+            {/* LARGE APPLIANCES */}
+            <div className='my-8'>
               <div className='px-11 my-2'>
                   <h1 className='text-3xl font-semibold'>Killer Deals</h1>
               </div>

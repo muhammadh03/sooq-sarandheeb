@@ -21,80 +21,172 @@ import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
 
 import ElectronicsAndAppliancesCard from './Cards/ElectronicsAndAppliancesCard';
 
-import imageOne from '../assets/HomeAndLifeStyle/imageOne.webp';
-import imageTwo from '../assets/HomeAndLifeStyle/imageTwo.webp';
-import imageThree from '../assets/HomeAndLifeStyle/imageThree.webp';
-import imageFour from '../assets/HomeAndLifeStyle/imageFour.webp';
-import imageFive from '../assets/HomeAndLifeStyle/imageFive.webp';
-import imageSix from '../assets/HomeAndLifeStyle/imageSix.webp';
-import imageSeven from '../assets/HomeAndLifeStyle/imageSeven.webp';
-import imageEight from '../assets/HomeAndLifeStyle/imageEight.webp';
-import imageNine from '../assets/HomeAndLifeStyle/imageNine.webp';
-import imageTen from '../assets/HomeAndLifeStyle/imageTen.webp';
-import imageEleven from '../assets/HomeAndLifeStyle/imageEleven.webp';
-import imageTwelve from '../assets/HomeAndLifeStyle/imageTwelve.webp';
+import imageOne from '../assets/ElectronicsAndAppliances/imageOne.webp';
+import imageTwo from '../assets/ElectronicsAndAppliances/imageTwo.jpeg';
+import imageThree from '../assets/ElectronicsAndAppliances/imageThree.jpeg';
+import imageFour from '../assets/ElectronicsAndAppliances/imageFour.jpeg';
+import imageFive from '../assets/ElectronicsAndAppliances/imageFive.jpeg';
+import imageSix from '../assets/ElectronicsAndAppliances/imageSix.jpeg';
+import imageSeven from '../assets/ElectronicsAndAppliances/imageSeven.jpeg';
+import imageEight from '../assets/ElectronicsAndAppliances/imageEight.jpeg';
+import imageNine from '../assets/ElectronicsAndAppliances/imageNine.jpeg';
+import imageTen from '../assets/ElectronicsAndAppliances/imageTen.jpeg';
+import imageEleven from '../assets/ElectronicsAndAppliances/imageEleven.jpeg';
+import imageTwelve from '../assets/ElectronicsAndAppliances/imageTwelve.png';
 
 
 const CardDetails = [
     {
-        title: 'WallNut',
+        brand: 'Boat',
+        title: 'Boat Rockerz 425 Bluetooth Wireless Headphone',
         itemImage: imageOne,
-        price: '0.750'
+        price: '0.750',
+        descriptions: {
+            descriptionOne: 'Battery Life: 25 Hours',
+            descriptionTwo: 'Bluetooth Version: 5.2',
+            descriptionThree: 'Dual Pairing',
+            descriptionFour: 'ASAP Charge'
+        }
     },
     {
-        title: 'Hazelnut',
+        brand: 'Philips',
+        title: 'Philips Multi Grooming Set MG5930/65',
         itemImage: imageTwo,
-        price: '0.850'
+        price: '0.850',
+        descriptions: {
+            descriptionOne: 'Trimmer',
+            descriptionTwo: '9 Length Settings',
+            descriptionThree: 'Mens Grooming',
+            descriptionFour: 'Up to 120 Minutes Runtime'
+        }
     },
     {
-        title: 'Peanut',
+        brand: 'Samsung',
+        title: 'Samsung 10 kg 5 Star Fully Automatic Top Load',
         itemImage: imageThree,
-        price: '0.550'
+        price: '0.550',
+        descriptions: {
+            descriptionOne: 'Fully Automatic Top Load',
+            descriptionTwo: '700 RPM',
+            descriptionThree: '5 Star Rating',
+            descriptionFour: '10 kg Capacity',
+            descriptionFive: 'Eco Bubble Technology'
+        }
     },
     {
-        title: 'Almond',
+        brand: 'Samsung',
+        title: 'Samsung 7.5 Kg 5 Star Semi Automatic',
         itemImage: imageFour,
-        price: '0.650'
+        price: '0.650',
+        descriptions: {
+            descriptionOne: 'Semi Automatic Washing Machine',
+            descriptionTwo: '1300 RPM',
+            descriptionThree: '5 Star Rating',
+            descriptionFour: '7.5 kg Capacity',
+            descriptionFive: 'Hexa Storm Pulsator Wash Technology'
+        }
     },
     {
-        title: 'CashewNut',
+        brand: 'Impex',
+        title: 'Impex IGS 1213M NEO Glass Top Manual Gas Stove',
         itemImage: imageFive,
-        price: '0.750'
+        price: '0.750',
+        descriptions: {
+            descriptionOne: 'Type: Manual Gas Stove',
+            descriptionTwo: 'Burner Type: Brass',
+            descriptionThree: 'Number of Burners: 3',
+            descriptionFour: 'Body Material: Glass',
+            descriptionFive: 'Color: Black'
+        }
     },
     {
-        title: 'Pistachio',
+        brand: 'Whirlpool',
+        title: 'Whirlpool 7kg 5 Star Fully Automatic Top Load',
         itemImage: imageSix,
-        price: '1.250'
+        price: '1.250',
+        descriptions: {
+            descriptionOne: 'Fully Automatic Top Load',
+            descriptionTwo: '740 RPM',
+            descriptionThree: '5 Star Rating',
+            descriptionFour: '7 kg Capacity',
+            descriptionFive: 'Spiro Wash Technology, 6th Sense Technology'
+        }
     },
     {
-        title: 'WallNutTwo',
+        brand: 'LG',
+        title: 'LG 10 kg 5 Star Fully Automatic Top Load',
         itemImage: imageSeven,
-        price: '0.750'
+        price: '0.750',
+        descriptions: {
+            descriptionOne: 'Fully Automatic Top Load',
+            descriptionTwo: '700 RPM',
+            descriptionThree: '5 Star Rating',
+            descriptionFour: '10 kg Capacity',
+            descriptionFive: 'Jet Spray+'
+        }
     },
     {
-        title: 'HazelnutTwo',
+        brand: 'LG',
+        title: 'LG 7.5 kg Fully Automatic Top Load',
         itemImage: imageEight,
-        price: '0.850'
+        price: '0.850',
+        descriptions: {
+            descriptionOne: 'Fully Automatic Top Load',
+            descriptionTwo: '700 RPM',
+            descriptionThree: '7.5 kg Capacity',
+            descriptionFour: '8 Wash Programs'
+        }
     },
     {
-        title: 'PeanutTwo',
+        brand: 'Prestige',
+        title: 'Prestige Nutri-Mix 2.0 350W Mixer Grinder with 2 Multipurpose Jars',
         itemImage: imageNine,
-        price: '0.550'
+        price: '0.550',
+        descriptions: {
+            descriptionOne: '350 W : Higher the Wattage, tougher the Juicing/Grinding',
+            descriptionTwo: 'Stainless steel blades for multiple functions',
+            descriptionThree: 'Dual Jar Design',
+            descriptionFour: 'Suitable for: Wet Grinding, Chutney Grinding, Dry Grinding, Blending'
+        }
     },
     {
-        title: 'AlmondTwo',
+        brand: 'Toshiba',
+        title: 'Toshiba 7 kg 5 Star Fully Automatic Top Load',
         itemImage: imageTen,
-        price: '0.650'
+        price: '0.650',
+        descriptions: {
+            descriptionOne: 'Fully Automatic Top Load',
+            descriptionTwo: '0.750',
+            descriptionThree: '5 Star Rating',
+            descriptionFour: '7 kg Capacity',
+            descriptionFive: 'Fundamentally Clean Technology, Pulsator Wash, Fuzzy Control'
+        }
     },
     {
-        title: 'CashewNutTwo',
+        brand: 'Bosch',
+        title: 'Bosch 7.5 kg Fully Automatic Top Load',
         itemImage: imageEleven,
-        price: '0.750'
+        price: '0.750',
+        descriptions: {
+            descriptionOne: 'Fully Automatic Top Load',
+            descriptionTwo: '680 RPM : Higher the spin speed, lower the drying time',
+            descriptionThree: 'PowerWave Wash System',
+            descriptionFour: '7.5 kg Capacity',
+            descriptionFive: 'Reload function, Stain Removal'
+        }
     },
     {
-        title: 'PistachioTwo',
+        brand: 'Bosch',
+        title: 'Bosch 6.5 kg Fully Automatic Top Load',
         itemImage: imageTwelve,
-        price: '1.250'
+        price: '1.250',
+        descriptions: {
+            descriptionOne: 'Fully Automatic Top Load',
+            descriptionTwo: '680 RPM : Higher the spin speed, lower the drying time',
+            descriptionThree: 'Vario Inverter motor',
+            descriptionFour: '6.5 kg Capacity',
+            descriptionFive: 'One touch Start ,Soft Closing Lid'
+        }
     },
 ];
 
@@ -194,12 +286,32 @@ const KillerDeals = () => {
                         }}
                         className="mySwiper"
                     >
-                        {CardDetails.map(({ title, itemImage, price }) => (
+                        {CardDetails.map(({ 
+                            brand, 
+                            title, 
+                            itemImage,
+                            descriptions,
+                            // descriptionOne, 
+                            // descriptionTwo,
+                            // descriptionThree,
+                            // descriptionFour,
+                            // descriptionFive,
+                            // descriptionSix,
+                            price
+                        }) => (
                             <SwiperSlide>
                                 <ElectronicsAndAppliancesCard
                                     key={title}
+                                    brand={brand}
                                     title={title}
                                     itemImage={itemImage}
+                                    descriptions={descriptions}
+                                    // descriptionOne={descriptionOne}
+                                    // descriptionTwo={descriptionTwo}
+                                    // descriptionThree={descriptionThree}
+                                    // descriptionFour={descriptionFour}
+                                    // descriptionFive={descriptionFive}
+                                    // descriptionSix={descriptionSix}
                                     price={price}
                                     className='gap-6'
                                 />
